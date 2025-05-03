@@ -1,0 +1,62 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "openmrs/roadmap",
+	"title": "OpenMRS Roadmap",
+	"category": "design",
+	"icon": "admin-site-alt3",
+	"description": "Display the OpenMRS roadmap.",
+	"textdomain": "openmrs-roadmap",
+	"editorScript": "file:./index.js",
+	"style": "file:./style.scss",
+	"editorStyle": "file:./editor.scss",
+	"attributes": {
+		"tag": {
+			"type": "string",
+			"default": "Roadmap"
+		},
+		"heading": {
+			"type": "string",
+			"default": "Collaborating on shared needs"
+		},
+		"description": {
+			"type": "string",
+			"default": "See what’s coming up and suggest new features or functionality."
+		},
+		"buttonText": {
+			"type": "string",
+			"default": "Go to our roadmap"
+		},
+		"buttonUrl": {
+			"type": "string",
+			"default": "product/roadmap.html"
+		},
+		"releases": {
+			"type": "array",
+			"default": [
+				{
+					"version": "Release 3.3.30",
+					"desc": "A short summary of changes in this release"
+				},
+				{
+					"version": "Release 3.3.29",
+					"desc": "A short summary of changes in this release"
+				},
+				{
+					"version": "Release 3.3.28",
+					"desc": "A short summary of changes in this release"
+				},
+				{
+					"version": "Release 3.3.27",
+					"desc": "A short summary of changes in this release"
+				}
+			]
+		}
+	},
+	"supports": {
+		"inserter": true,
+		"html": false,
+		"reusable": true,
+		"remove": true
+	}
+}
